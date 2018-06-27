@@ -1,4 +1,4 @@
-# Watson NLC Phishing E-mails
+# Watson NLC Job Classifier
 
 <img src="https://raw.githubusercontent.com/cdimascio/watson-nlc-spam/master/assets/watson-nlc.png"  width="200"  align="right" /></br>
 
