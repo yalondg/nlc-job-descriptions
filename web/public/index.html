@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Job Description Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Watson Natural Language Classifier for Job Descriptions" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="stylesheets/watson-bootstrap-dark.css" rel="stylesheet">
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+    <script src="routes/creds.js"></script>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row header">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1>Job Description Classifier
+                        </h1>
+
+                        <nav class="bx--breadcrumb bx--breadcrumb--no-trailing-slash" aria-label="breadcrumb">
+                            <div class="bx--breadcrumb-item">
+                              <a href="https://www.ibm.com/watson/services/natural-language-classifier/" class="bx--link">Natural Language Classifier</a>
+                            </div>
+                            <div class="bx--breadcrumb-item">
+                              <a href="https://console.bluemix.net/docs/services/natural-language-classifier/sample-applications.html#sample-apps" class="bx--link">Sample Apps</a>
+                            </div>
+
+                            <div class="bx--breadcrumb-item">
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <div>
+                        <p>With the enormous number and variety of jobs
+                          available on job listing websites, narrowing down which
+                          jobs you might be qualified for is often a major challenge
+                           for potential applicants.
+                        </p>
+                        <p>
+                          This sample app receives an applicant's qualifications as its
+                           input and leverages <a target="_blank" href="https://www.ibm.com/watson/services/natural-language-classifier/">Watson Natural Language Classifier</a> to extract
+                           the key words and phrases from your list of qualifications
+                            and matches them to the desired qualifications within job listing descriptions.
+                            Its classifier was trained using <a target="_blank" href="https://medium.com/r/?url=https%3A%2F%2Fdata.cityofnewyork.us%2FCity-Government%2FNYC-Jobs%2Fkpav-sd4t">NYC Open Data's Job Category data set</a>, an
+                            open-source data set that contains the various job titles and descriptions of jobs the City of New York has posted on its hiring website.
+                        </p>
+                        <p>
+                            Click the drop down to view some examples or enter your own job description or list of qualifications and see how its classified.
+
+                        </p>
+
+                        <p> Don't have a job description or resume handy? Feel free to browse <a target="_blank" href="https://www.indeed.com/">Indeed</a> to find a job description to test out!
+                        </p>
+
+<!--TODO: change to reflect new training data>
+                        <p>
+                            The Training Data: Data files are a modification of the <a target="_blank" href="https://www.edrm.net/resources/data-sets"> Enron E-mail Dataset </a> as found on EDRM.net.
+                            That data is available under a Creative Commons Attribution 3.0 Unported License. That means you are free to share, remix or make commercial use of the
+                            content so long as you provide attribution. More information can be found
+                            <a href="https://www.edrm.net/resources/data-sets" target="_blank">here</a>.
+                        </p> -->
+<!--TODO: Link to own github-->
+<p>
+</p>
+                        <h4>
+
+                          Resources: </h4>
+                        <p id="resourceX">
+                            <a target="_blank" href="https://github.com/zmohammad01/NLC-spam-emails"> Read the Medium Article </a>  •
+                            <a target="_blank" href="https://github.com/zmohammad01/NLC-spam-emails"> Fork the code in GitHub </a>  •
+                            <a target="_blank" href="https://console.bluemix.net/docs/services/natural-language-classifier/getting-started.html"> View the docs </a>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well">
+                        <form id="form" role="form">
+                            <div class="input-group classifier-input-form">
+                                <input class="form-control input-lg classify-text" placeholder="Enter text" type="text" autofocus required />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-lg classify-btn" type="submit">Classify
+                                        <i class="loading fa fa-spinner fa-spin"></i>
+                                    </button>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-lg dropdown-toggle examples-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu search-dropdown-menu">
+                                            <li>
+                                                <a href="#">Under the direct supervision, with some latitude for the exercise of independent judgment and unreviewed action or decision, performs technical work in the illustration presentation of materials, and interprets informational data in graphic form.    Assists in the design, layout and production of materials for publication purposes using a wide variety of art media and processes for reproduction in black and white, limited or full color and by a variety of reproduction methods, such as photostat, photo-print or slide, ozalid, offset, letter press, silk screen and others; assists in the preparation of posters, informative displays and exhibits.    Prepares, by both freehand and mechanical means, comprehensive layouts, mechanical, paste-ups, charted data, hand lettering and illustrations (for publications and exhibition purposes), for material that may include pamphlets, booklets, posters, informative displays, exhibits maps, charts and graphs.  May on occasion, supervise other graphic artists in the performance</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bureau of Environmental Planning and Analysis at the New York City Department of Environmental Protection is seeking a Stormwater Program Coordinator.  Under the general supervision of  the Watershed Planning and Modeling Director, the selected candidate will assist in management of the City of New Yorkâ€™s municipal storm water program in compliance with the State Pollutant Discharge Elimination System Municipal Permit - SPDES No.NY0287890 (MS4 Permit).  The ideal candidate shall have experiences in municipal storm water program development and management, inter-departmental coordination, preparation of MS4 Permit deliverables, review and oversight of water quality and erosion control related projects, consultant management, and general support on all storm water related issues.  Additional responsibilities will entail support  on administrative functions such as preparation of scope of works and cost estimates, budget tracking and coordination among Bureau sections and other DEP departments and city agencies.</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">The candidate will perform professional, analytic work regarding the daily administration of agency-wide hiring and promotion activities: oversee the review and processing of Personnel Request Forms (PRFs) in order to implement hiring, promotion and transfer requests; coordinate the processing of new hire and promotional records in NYCAPS including submission to the Office of Management and Budget (OMB); train agency-wide personnel coordinators on current NYCAPS procedures; coordinate the preparation of spreadsheets detailing /summarizing personnel actions for presentation to Executive staff; submit spreadsheet data to the Director of Personnel for review; provide supporting documentation and interpret/clarify data based on citywide guidelines; serve as a contact person /liaison with IT&T regarding the maintenance of the Personnel Actions Information and Reporting System (pairs); </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Under supervision, with latitude for independent judgment, performs difficult secretarial and typing duties, including but not limited to: Typing briefs, memoranda, correspondence, legal documents and statistical reports utilizing computer software applications such as Windows, MS Office Suite, etc... Transcribing audio or video files. Proofreading legal briefs, reports, documents and other material. Maintaining legal files and other pertinent legal documents. Other related clerical work, including, but not limited to, data entry. May also: Supervise subordinate staff. Assist in the development of office procedures. Answer phones, placing and/or screening calls. Schedule appointments. Assist with training staff.</a>
+                                            </li>
+                                         </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </form>
+
+                        <h5>Notes:</h5>
+                        <p id="notes">· Since the classifier was trained on jobs posted by the City of New York, it does best on jobs that are similar to those you might expect from a municipal government.
+                        </br> · Please limit inputted job descriptions to less than 1024 characters.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row answers">
+                <div class="col-lg-12">
+                    <div class="well">
+                        <h1 class="answer"></h1>
+                        <p class="confidence"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="javascripts/app.js"></script>
+</body>
