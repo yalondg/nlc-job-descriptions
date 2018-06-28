@@ -1,4 +1,4 @@
-# Watson NLC Job Classifier
+# [Watson NLC Job Classifier](http://nlc-job-descriptions.mybluemix.net/#)
 
 <img src="https://raw.githubusercontent.com/cdimascio/watson-nlc-spam/master/assets/watson-nlc.png"  width="200"  align="right" /></br>
 
@@ -11,7 +11,7 @@ http://nlc-job-descriptions.mybluemix.net/#
 
 * Training data
 
-* Test data
+* The web app
 
 
 ## What you'll need
@@ -19,7 +19,7 @@ http://nlc-job-descriptions.mybluemix.net/#
 ### Prerequisites
 
 
-* [curl](http://curl.haxx.se/download.html)
+* [curl](http://curl.haxx.se/download.html) to access the API (or you can use [the tooling](https://natural-language-classifier-toolkit.ng.bluemix.net/ccae7ccd-babe-4a5d-8181-42955842d2a2/classifiers))
 
 * [IBM Cloud Account](www.bluemix.net)
 
