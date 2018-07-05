@@ -37,6 +37,9 @@ http://nlc-job-descriptions.mybluemix.net/#
 
 As a proof of concept, the app uses [NYC Open Data's Job Category](https://data.cityofnewyork.us/City-Government/NYC-Jobs/kpav-sd4t) data set, an open-source data set that contains the various job titles and descriptions of jobs the City of New York has  posted on its hiring website.. The data is available from the City of New York and you are free to share, remix, or make commercial use of the content in whatever way you like.
 
+## Use with your own classifier
+To modify this sample app to run with your own Natural Language Classifier, train your classifier and then replace the CLASSIFIER_ID field on line 6 of classify.js (located in web/routes/classify.js) with your own classifier ID.
+
 ## License
 
 [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
